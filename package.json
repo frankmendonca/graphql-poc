@@ -1,0 +1,19 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --ext js,graphql",
+    "stop": "fuser -k 4000/tcp || exit 0",
+    "restart": "yarn stop ; yarn start"
+  },
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "graphql": "^14.6.0",
+    "graphql-import": "^0.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
